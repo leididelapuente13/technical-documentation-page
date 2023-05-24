@@ -43,7 +43,7 @@ body{
     padding: 0.7rem 0.6rem 0.6rem 0.9rem;
     font-size: 1rem;
     color: #4d4e53;
-    border-bottom: 1px solid #4d4e53;
+    border-bottom: 1.7px solid   rgba(0, 22, 22, 0.4);
     width: 100%;
 }
 
@@ -52,17 +52,18 @@ body{
 }
 
 .main__section{
-
+    margin-inline: 1rem;
 }
 
 .section__header{
-
+    padding: 0.5rem;
 }
 
 .section__title{
     font-size: 2rem;
     font-weight: 400;
     color: #000;
+    margin-top: 1rem;
 }
 
 .section__content{
@@ -70,20 +71,27 @@ body{
     margin-top: 0.8rem;
 }
 
+.section__content, .section__item{
+    font-size: 0.93rem;
+    line-height: 1.4;
+}
+
 .section__lista{
     margin-left: 4rem;
+    margin-top: 1rem;
 }
 
 .section__item{
-
+    margin-bottom: 1rem;
 }
 
 .section__code{
-
-}
-
-.section__link{
-
+    background-color: #f7f7f7;
+    display: block;
+    margin: 1rem auto;
+    width: 80%;
+    overflow-x: scroll;
+    padding: 1.5rem;
 }
 
 @media (min-width: 818px) {
@@ -101,6 +109,11 @@ body{
         position: fixed;
         left: 0;
         top: 0;
+        border: solid 2px;
+    }
+
+    .nav__item:first-child{
+        border-top: 1.7px solid   rgba(0, 22, 22, 0.4);
     }
 
     .nav__link{
@@ -110,5 +123,15 @@ body{
 
     .nav__lista{
         height: 100vh;
+        border-top: none;
+        padding: 0.5rem;
+    }
+
+    .nav__item:last-child{
+        padding-bottom: 5rem;
+    }
+
+    .section__content, .section__item{
+        font-size: 0.92rem;
     }
 }    
